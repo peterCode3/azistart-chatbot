@@ -50,7 +50,7 @@ function AddManuallyIntent({ closeIndentForm, onSubmit }) {
     }
 
     return (
-        <div className='drop_dwn_form'>
+        <div className='drop_dwn_form add_manually_form'>
             <div className='inr_drop_dn_frm'>
                 <div className='frm-outer'>
                     <div className='hdr_form'>
@@ -70,7 +70,7 @@ function AddManuallyIntent({ closeIndentForm, onSubmit }) {
                             <label className='input_lble_url'>
                                 <input type='text' value={tag} placeholder='Tag' onChange={(e) => setTag(e.target.value)} required />
                             </label>
-                            <label className='input_lble_url'>
+                            <label className='question input_lble_url'>
                                 <textarea
                                     value={patterns}
                                     placeholder='Question'
@@ -79,7 +79,7 @@ function AddManuallyIntent({ closeIndentForm, onSubmit }) {
                                     required
                                 />
                             </label>
-                            <label className='input_lble_url'>
+                            <label className='response input_lble_url'>
                                 <textarea
                                     placeholder='Response'
                                     value={responses}
