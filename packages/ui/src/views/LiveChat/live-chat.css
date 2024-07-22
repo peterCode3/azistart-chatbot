@@ -1,10 +1,7 @@
-
 .url_sub_form form p {
     font-size: 18px;
     margin-top: 30px;
 }
-
-
 
 .hdr_st_so {
     display: flex;
@@ -73,34 +70,33 @@
     display: block;
 }
 .evnt_inr_bx h6 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: -0.01em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+}
 
-    }
-
-  .box_event {
+.box_event {
     margin-top: 30px;
-  }
+}
 .evnt_inr_bx p {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: -0.01em;
-        color: rgb(100, 116, 145);
-    }
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    color: rgb(100, 116, 145);
+}
 
 .evnt_inr_bx:hover {
     box-shadow: rgba(0, 20, 51, 0.12) 0px 2px 6px;
     border-color: rgb(5, 102, 255);
     outline: rgb(5, 102, 255) solid 1px;
 }
-.drop_dwn_form{
+.drop_dwn_form {
     position: fixed;
     inset: 0px;
     background-color: rgba(8, 15, 26, 0.8);
@@ -115,11 +111,11 @@
     opacity: 1;
     transform: translateY(0px);
     margin: auto;
-    transform: translateY(-25%);
+    /* transform: translateY(-25%); */
     transition: all 0.3s ease-out 0s;
     outline: none;
 }
-.frm-outer{
+.frm-outer {
     width: min(-32px + 100vw, 700px);
     height: auto;
     display: flex;
@@ -223,7 +219,6 @@
     white-space: nowrap;
 }
 
-
 /* Get Details */
 
 .scrollAreaViewport {
@@ -246,7 +241,8 @@
     border-bottom: 1px solid rgb(239, 242, 246);
 }
 
-.data-table th, .data-table td {
+.data-table th,
+.data-table td {
     padding-block: 0px;
     padding-left: 16px;
     padding-right: 16px;
@@ -273,8 +269,6 @@ table.data-table tbody tr td {
     padding: 20px 16px;
 }
 
-
-
 /* Chatbot */
 
 /* index.module.css */
@@ -283,9 +277,9 @@ table.data-table tbody tr td {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  #chatbote .chatbotToggle {
+}
+
+#chatbote .chatbotToggle {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -299,8 +293,8 @@ table.data-table tbody tr td {
     align-items: center;
     justify-content: center;
 }
-  
-  #chatbote  .chatbotContainer {
+
+#chatbote .chatbotContainer {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -310,13 +304,41 @@ table.data-table tbody tr td {
     padding: 20px;
     transition: transform 0.3s ease-in-out;
     z-index: 1000;
-  }
-  
-  #chatbote  .chatbotContainer.open {
+}
+
+#chatbote .chatbotContainer.open {
     transform: translateY(0);
-  }
-  
-  #chatbote  .chatbotContainer.closed {
+}
+
+#chatbote .chatbotContainer.closed {
     transform: translateY(100%);
-  }
-  
+}
+
+/* Add Manually */
+.add_manually_form .frm-outer {
+    padding-bottom: 30px;
+}
+.add_manually_form .submit_btn {
+    padding: 0px;
+    margin: 0;
+}
+.question textarea,
+.response textarea {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #080f1a;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d3dbe5;
+    border-radius: 4px;
+    padding: 16px 14px;
+    outline: none;
+    min-height: 60px;
+    margin-top: 20px;
+}
+.response textarea {
+    min-height: 250px;
+}
